@@ -1,1 +1,210 @@
-hola
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Preguntas frecuentes — Grupo Oliveira</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background: #f0f4f7;
+    height: 100vh;
+    height: 100dvh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Header */
+  .header {
+    background: #3A5068;
+    color: white;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+  .header-back {
+    background: rgba(255,255,255,0.15);
+    border: none;
+    color: white;
+    font-size: 22px;
+    width: 36px; height: 36px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex; align-items: center; justify-content: center;
+    text-decoration: none;
+    flex-shrink: 0;
+  }
+  .header-title { font-size: 16px; font-weight: 700; }
+  .header-sub { font-size: 12px; opacity: 0.75; margin-top: 2px; }
+
+  /* Content */
+  .faq-page { padding: 0 0 16px; background: #f0f4f7; flex: 1; overflow-y: auto; min-height: 0; }
+  .faq-section-label {
+    margin: 16px 16px 8px;
+    font-size: 11px; font-weight: 700; color: #7a9ab0;
+    text-transform: uppercase; letter-spacing: 0.06em;
+  }
+  .faq-item {
+    margin: 8px 16px 0;
+    background: white;
+    border: 1px solid #d0dde6;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  }
+  .faq-item summary {
+    list-style: none;
+    cursor: pointer;
+    padding: 13px 14px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 13.5px;
+    font-weight: 600;
+    color: #2a2a2a;
+  }
+  .faq-item summary::-webkit-details-marker { display: none; }
+  .faq-q-icon {
+    width: 26px; height: 26px;
+    border-radius: 8px;
+    background: #EEF0FA; color: #3A5068;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 13px; font-weight: 700;
+    flex-shrink: 0;
+  }
+  .faq-chevron {
+    margin-left: auto;
+    color: #ccc;
+    font-size: 13px;
+    transition: transform 0.2s;
+    flex-shrink: 0;
+  }
+  .faq-item[open] .faq-chevron { transform: rotate(180deg); }
+  .faq-item[open] summary { border-bottom: 1px solid #f0f4f7; }
+  .faq-answer {
+    padding: 4px 14px 14px 52px;
+    font-size: 13px; color: #555; line-height: 1.6;
+  }
+  .faq-answer strong { color: #3A5068; }
+  .faq-answer ul { margin: 4px 0 0 16px; padding: 0; }
+  .faq-answer li { margin-bottom: 3px; }
+
+  .legal-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    padding: 10px 16px 14px;
+    background: #f0f4f7;
+    flex-shrink: 0;
+    border-top: 1px solid #d8e4ec;
+  }
+  .legal-links { display: flex; gap: 6px; align-items: center; }
+  .legal-links a { font-size: 10.5px; color: #7a9ab0; text-decoration: none; letter-spacing: 0.01em; }
+  .legal-links a:hover { color: #3A5068; }
+  .legal-links-sep { font-size: 9px; color: #b0c4d0; }
+  .legal-brand { font-size: 9px; color: #b0c4d0; letter-spacing: 0.04em; }
+</style>
+</head>
+<body>
+
+  <div class="header">
+    <a class="header-back" onclick="history.back()">‹</a>
+    <div>
+      <div class="header-title">Preguntas frecuentes</div>
+      <div class="header-sub">Grupo Oliveira · Resolvemos tus dudas</div>
+    </div>
+  </div>
+
+  <div class="faq-page">
+
+    <div class="faq-section-label">Aparcamiento y llegada</div>
+
+    <details class="faq-item">
+      <summary><span class="faq-q-icon">?</span><span>¿Dónde puedo aparcar el coche?</span><span class="faq-chevron">▾</span></summary>
+      <div class="faq-answer">El apartamento dispone de plaza de garaje en el sótano 3. Encontrará el acceso en Calle Ciudad de la Habana, Nº3, y podrá abrir el portón con el mando o la llave negra que se le entrega junto con las llaves del apartamento. Tiene todos los detalles paso a paso en el apartado <strong>"Instrucciones"</strong> de esta página.</div>
+    </details>
+
+    <details class="faq-item">
+      <summary><span class="faq-q-icon">?</span><span>¿Qué hago si pierdo las llaves?</span><span class="faq-chevron">▾</span></summary>
+      <div class="faq-answer">Debe comunicarlo <strong>de inmediato</strong> al anfitrión llamando o escribiendo por WhatsApp al 613 61 19 78. La pérdida de las llaves del garaje conlleva una penalización de 30 €.</div>
+    </details>
+
+    <div class="faq-section-label">Horarios</div>
+
+    <details class="faq-item">
+      <summary><span class="faq-q-icon">?</span><span>¿Puedo entrar antes de las 15:00 o salir más tarde de las 11:00?</span><span class="faq-chevron">▾</span></summary>
+      <div class="faq-answer">El check-in estándar es a partir de las <strong>15:00 h</strong> y el check-out antes de las <strong>11:00 h</strong>. Si necesita un horario flexible, escríbanos con antelación al 613 61 19 78 y le confirmaremos si es posible según la disponibilidad del apartamento.</div>
+    </details>
+
+    <details class="faq-item">
+      <summary><span class="faq-q-icon">?</span><span>¿Con qué frecuencia se limpia el apartamento si me quedo varios días?</span><span class="faq-chevron">▾</span></summary>
+      <div class="faq-answer">En estancias de media y larga duración, la limpieza está incluida cada 4 días y es obligatoria cada 7 días (cambio de toallas, sábanas y limpieza general, excepto menaje de cocina). Si prefiere posponerla dentro de ese margen, avísenos con antelación; de lo contrario, el personal entrará entre las 10:00 y las 12:00 h.</div>
+    </details>
+
+    <div class="faq-section-label">Durante la estancia</div>
+
+    <details class="faq-item">
+      <summary><span class="faq-q-icon">?</span><span>Algo no funciona en el apartamento, ¿qué hago?</span><span class="faq-chevron">▾</span></summary>
+      <div class="faq-answer">Comuníquelo <strong>de inmediato</strong> al anfitrión a través del teléfono o WhatsApp 613 61 19 78, o por email a apartamentosgenova@gmail.com. Para urgencias fuera de horario, disponemos de los números 983 40 99 16 y 983 79 12 43.</div>
+    </details>
+
+    <details class="faq-item">
+      <summary><span class="faq-q-icon">?</span><span>¿El anfitrión puede entrar al apartamento mientras estoy alojado?</span><span class="faq-chevron">▾</span></summary>
+      <div class="faq-answer">Su privacidad es una prioridad absoluta: nunca se accederá al apartamento sin su consentimiento previo. La única excepción es un caso de <strong>fuerza mayor o emergencia grave</strong> (indicios de incendio, humo, olor a gas o una fuga de agua activa), en cuyo caso se intentará contactar con usted antes de entrar.</div>
+    </details>
+
+    <details class="faq-item">
+      <summary><span class="faq-q-icon">?</span><span>¿Puedo traer a mi mascota?</span><span class="faq-chevron">▾</span></summary>
+      <div class="faq-answer">Solo si ha sido <strong>autorizada previamente</strong> por el alojamiento. Escríbanos antes de su llegada para confirmarlo; el huésped será responsable de cualquier daño o molestia que pueda ocasionar.</div>
+    </details>
+
+    <details class="faq-item">
+      <summary><span class="faq-q-icon">?</span><span>¿Puede alojarse alguien que no figure en la reserva?</span><span class="faq-chevron">▾</span></summary>
+      <div class="faq-answer">No, únicamente pueden alojarse las personas incluidas en la reserva confirmada, sin superar el número máximo de ocupantes autorizado. Si necesita añadir a alguien, contacte con nosotros antes de su llegada.</div>
+    </details>
+
+    <div class="faq-section-label">Salida y convivencia</div>
+
+    <details class="faq-item">
+      <summary><span class="faq-q-icon">?</span><span>¿Qué debo dejar preparado el día de salida?</span><span class="faq-chevron">▾</span></summary>
+      <div class="faq-answer">
+        <ul>
+          <li>Toallas en la bañera o plato de ducha.</li>
+          <li>Menaje limpio en el lavavajillas o en el escurridor.</li>
+          <li>Nevera sin restos de comida y basura en los contenedores exteriores.</li>
+          <li>Llaves del apartamento y del garaje en la mesa del salón (o en el buzón verde del garaje).</li>
+        </ul>
+      </div>
+    </details>
+
+    <details class="faq-item">
+      <summary><span class="faq-q-icon">?</span><span>¿Qué no debo tirar por el inodoro?</span><span class="faq-chevron">▾</span></summary>
+      <div class="faq-answer">Por favor, no arroje toallitas, compresas, tampones, aceites u otros objetos que puedan obstruir las tuberías. Utilice siempre la papelera o los contenedores exteriores.</div>
+    </details>
+
+    <details class="faq-item">
+      <summary><span class="faq-q-icon">?</span><span>¿Qué pasa si hay quejas de los vecinos por ruido?</span><span class="faq-chevron">▾</span></summary>
+      <div class="faq-answer">El horario de silencio es de <strong>22:00 a 08:00 h</strong>. Si se generan molestias que deriven en avisos a la policía o sanciones del ayuntamiento, se aplicará una penalización de hasta 300 €, pudiendo llegar a la finalización inmediata de la estancia sin reembolso.</div>
+    </details>
+
+  </div>
+
+  <!-- Pie legal -->
+  <div class="legal-footer">
+    <div class="legal-links">
+      <a href="https://apartamentosgo.com/politica-de-privacidad/" target="_blank">Política de privacidad</a>
+      <span class="legal-links-sep">·</span>
+      <a href="https://apartamentosgo.com/aviso-legal/" target="_blank">Aviso legal</a>
+    </div>
+    <div class="legal-brand">Diseñado por StandQR</div>
+  </div>
+
+</body>
+</html>
