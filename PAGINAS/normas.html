@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Normas del apartamento — Grupo Oliveira</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background: #f0f4f7;
+    height: 100vh;
+    height: 100dvh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Header */
+  .header {
+    background: #3A5068;
+    color: white;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+  .header-back {
+    background: rgba(255,255,255,0.15);
+    border: none;
+    color: white;
+    font-size: 22px;
+    width: 36px; height: 36px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex; align-items: center; justify-content: center;
+    text-decoration: none;
+    flex-shrink: 0;
+  }
+  .header-title { font-size: 16px; font-weight: 700; }
+  .header-sub { font-size: 12px; opacity: 0.75; margin-top: 2px; }
+
+  /* Normas */
+  .normas-page { padding: 0 0 0; background: #f0f4f7; flex: 1; overflow-y: auto; min-height: 0; }
+  .normas-block { margin: 14px 16px 0; background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.05); }
+  .normas-block-header {
+    background: #3A5068; color: white;
+    padding: 12px 16px;
+    font-size: 13px; font-weight: 700;
+    display: flex; align-items: center; gap: 8px;
+  }
+  .normas-block-body { padding: 14px 16px; }
+  .normas-item {
+    display: flex; gap: 10px;
+    font-size: 13px; color: #444; line-height: 1.55;
+    padding: 6px 0;
+    border-bottom: 1px solid #f0f4f7;
+  }
+  .normas-item:last-child { border-bottom: none; }
+  .normas-num { color: #7bbfcc; font-weight: 700; flex-shrink: 0; width: 18px; }
+  .normas-text-block { font-size: 13px; color: #444; line-height: 1.6; padding: 4px 0; }
+  .normas-highlight {
+    background: #EEF0FA; border-left: 3px solid #3A5068;
+    border-radius: 0 8px 8px 0;
+    padding: 10px 14px; margin: 8px 0;
+    font-size: 12px; color: #3A5068; line-height: 1.55;
+  }
+  .normas-tag {
+    display: inline-flex; align-items: center; gap: 5px;
+    background: #fee; color: #c0392b;
+    border-radius: 20px; padding: 3px 10px;
+    font-size: 11px; font-weight: 700;
+    margin: 3px 3px 3px 0;
+  }
+  .legal-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    padding: 10px 16px 14px;
+    background: #f0f4f7;
+    flex-shrink: 0;
+    border-top: 1px solid #d8e4ec;
+  }
+  .legal-links {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+  }
+  .legal-links a {
+    font-size: 10.5px;
+    color: #7a9ab0;
+    text-decoration: none;
+    letter-spacing: 0.01em;
+  }
+  .legal-links a:hover { color: #3A5068; }
+  .legal-links-sep {
+    font-size: 9px;
+    color: #b0c4d0;
+  }
+  .legal-brand {
+    font-size: 9px;
+    color: #b0c4d0;
+    letter-spacing: 0.04em;
+  }
+</style>
+</head>
+<body>
+
+  <div class="header">
+    <a class="header-back" onclick="history.back()">‹</a>
+    <div>
+      <div class="header-title">Normas del apartamento</div>
+      <div class="header-sub">Grupo Oliveira · Régimen interno</div>
+    </div>
+  </div>
+
+  <div class="normas-page">
+
+    <div class="normas-block">
+      <div class="normas-block-header">✅ Servicios incluidos</div>
+      <div class="normas-block-body">
+        <div class="normas-item"><span class="normas-num">1</span><span>Ropa de cama y toallas. Cambio de baño cada 3 días, lencería cada 4 días.</span></div>
+        <div class="normas-item"><span class="normas-num">2</span><span>Cocina totalmente equipada: cubiertos, platos, vasos, sartenes, cacerolas, cafetera, nevera-congelador y más utensilios.</span></div>
+        <div class="normas-item"><span class="normas-num">3</span><span>Salón-comedor con televisión.</span></div>
+        <div class="normas-item"><span class="normas-num">4</span><span>WiFi incluido.</span></div>
+        <div class="normas-item"><span class="normas-num">5</span><span>Conjunto de limpieza: escoba, recogedor, fregona, bayeta, estropajo y trapo de cocina.</span></div>
+        <div class="normas-item"><span class="normas-num">6</span><span>Consumibles: gel, champú, jabón lavadora, papel higiénico y cerillas.</span></div>
+        <div class="normas-item"><span class="normas-num">7</span><span>Dosificador de jabón y gel en baños; lavavajillas en cocina.</span></div>
+        <div class="normas-item"><span class="normas-num">8</span><span>Tabla de planchar, plancha, lavadora, tendal y pinzas para tender ropa.</span></div>
+        <div class="normas-item"><span class="normas-num">9</span><span>Secador de pelo.</span></div>
+        <div class="normas-item"><span class="normas-num">10</span><span>Información y documentación turística de la zona.</span></div>
+      </div>
+    </div>
+
+    <div class="normas-block">
+      <div class="normas-block-header">📝 Registro de huéspedes</div>
+      <div class="normas-block-body">
+        <div class="normas-item"><span class="normas-num">1</span><span>Todos los huéspedes alojados deberán registrarse obligatoriamente mediante check-in online antes de acceder al alojamiento, conforme a la normativa vigente.</span></div>
+        <div class="normas-item"><span class="normas-num">2</span><span>Únicamente podrán alojarse las personas incluidas en la reserva confirmada.</span></div>
+        <div class="normas-item"><span class="normas-num">3</span><span>No se permite exceder el número máximo de ocupantes autorizado en ningún caso.</span></div>
+      </div>
+    </div>
+
+    <div class="normas-block">
+      <div class="normas-block-header">🕐 Horarios</div>
+      <div class="normas-block-body">
+        <div class="normas-item"><span class="normas-num">🔑</span><span><strong>Check-in:</strong> a partir de las 15:00 h.</span></div>
+        <div class="normas-item"><span class="normas-num">🚪</span><span><strong>Check-out:</strong> antes de las 11:00 h.</span></div>
+        <div class="normas-highlight">🌙 <strong>Horario de silencio: de 22:00 a 08:00 h.</strong> Quedan estrictamente prohibidas las fiestas, celebraciones o reuniones que puedan ocasionar molestias a vecinos o a la comunidad.</div>
+      </div>
+    </div>
+
+    <div class="normas-block">
+      <div class="normas-block-header">🤝 Convivencia</div>
+      <div class="normas-block-body">
+        <div class="normas-item"><span class="normas-num">1</span><span>Se ruega respetar el descanso de los vecinos y el uso adecuado de las zonas comunes.</span></div>
+        <div class="normas-item"><span class="normas-num">2</span><span>No está permitido generar ruidos excesivos, reproducir música a volumen elevado ni realizar actividades que puedan resultar molestas.</span></div>
+        <div class="normas-item"><span class="normas-num">3</span><span>Los huéspedes deberán comportarse de forma cívica y respetuosa en todo momento.</span></div>
+        <div class="normas-item"><span class="normas-num">4</span><span>Los daños ocasionados por un uso inadecuado serán responsabilidad del huésped.</span></div>
+      </div>
+    </div>
+
+    <div class="normas-block">
+      <div class="normas-block-header">🧹 Limpieza</div>
+      <div class="normas-block-body">
+        <div class="normas-text-block">El apartamento deberá mantenerse en condiciones adecuadas de orden y limpieza durante toda la estancia. No se deberá acumular basura en el interior del alojamiento.</div>
+        <div class="normas-text-block">Estancias de media y larga duración: la limpieza está incluida cada 4 días y es obligatoria cada 7 días. Si no desea realizarla antes de los 7 días deberá comunicarlo; de lo contrario, el personal de limpieza entrará al apartamento en horario de 10:00 a 12:00 h. Este servicio incluye el cambio de toallas y sábanas, así como una limpieza general (excepto el menaje de la cocina).</div>
+        <div class="normas-text-block">Antes de la salida, el apartamento deberá dejarse en un estado razonable:</div>
+        <div class="normas-item"><span class="normas-num">•</span><span>Toallas en la bañera o plato de ducha.</span></div>
+        <div class="normas-item"><span class="normas-num">•</span><span>Menaje limpio en el lavavajillas o en el escurridor del fregadero.</span></div>
+        <div class="normas-item"><span class="normas-num">•</span><span>Nevera sin restos de comida.</span></div>
+        <div class="normas-item"><span class="normas-num">•</span><span>La basura deberá depositarse en los contenedores habilitados en el exterior.</span></div>
+        <div class="normas-item"><span class="normas-num">•</span><span>No se deben arrojar toallitas, compresas, tampones, aceites u otros objetos al inodoro.</span></div>
+        <div class="normas-highlight">⚠️ La suciedad o los daños extraordinarios podrán dar lugar a cargos adicionales.</div>
+      </div>
+    </div>
+
+    <div class="normas-block">
+      <div class="normas-block-header">🛋️ Uso de las instalaciones</div>
+      <div class="normas-block-body">
+        <div class="normas-item"><span class="normas-num">1</span><span>Los electrodomésticos y el mobiliario deberán utilizarse de forma adecuada y conforme a su finalidad.</span></div>
+        <div class="normas-item"><span class="normas-num">2</span><span>No está permitido mover muebles ni trasladar el mobiliario al exterior.</span></div>
+        <div class="normas-item"><span class="normas-num">3</span><span>Queda prohibida la manipulación de cuadros eléctricos, calderas o equipos técnicos.</span></div>
+        <div class="normas-item"><span class="normas-num">4</span><span>Cualquier avería o desperfecto deberá comunicarse de inmediato al anfitrión.</span></div>
+      </div>
+    </div>
+
+    <div class="normas-block">
+      <div class="normas-block-header">⚡ Ahorro energético</div>
+      <div class="normas-block-body">
+        <div class="normas-item"><span class="normas-num">1</span><span>Se solicita apagar luces, aire acondicionado y calefacción al salir del alojamiento.</span></div>
+        <div class="normas-item"><span class="normas-num">2</span><span>Mantener puertas y ventanas cerradas mientras la climatización esté en funcionamiento.</span></div>
+        <div class="normas-item"><span class="normas-num">3</span><span>Hacer un uso responsable del agua y la electricidad.</span></div>
+      </div>
+    </div>
+
+    <div class="normas-block">
+      <div class="normas-block-header">🔒 Seguridad</div>
+      <div class="normas-block-body">
+        <div class="normas-item"><span class="normas-num">1</span><span>Asegurar el cierre de puertas y ventanas al abandonar el apartamento.</span></div>
+        <div class="normas-item"><span class="normas-num">2</span><span>Custodiar las llaves y comunicar inmediatamente su pérdida.</span></div>
+        <div class="normas-item"><span class="normas-num">3</span><span>Familiarizarse con la ubicación de los elementos de emergencia y salidas de evacuación.</span></div>
+        <div class="normas-text-block" style="margin-top:8px;"><strong>Acceso al apartamento en caso de emergencia:</strong> la privacidad de nuestros huéspedes es una prioridad absoluta. El propietario o el personal de gestión nunca entrarán al apartamento sin tu consentimiento previo.</div>
+        <div class="normas-highlight">🚨 <strong>Excepción de emergencia:</strong> el personal se reserva el derecho de acceder de forma inmediata y urgente al alojamiento únicamente en casos de fuerza mayor o emergencia grave que puedan poner en peligro la seguridad de las personas o del edificio (por ejemplo: indicios claros de incendio, humo, olor a gas, o sospecha de inundación o fuga de agua activa informada por vecinos o la comunidad). En cualquier situación de este tipo, se intentará contactar contigo por teléfono y mediante la aplicación antes de proceder al acceso.</div>
+      </div>
+    </div>
+
+    <div class="normas-block">
+      <div class="normas-block-header">🚫 Prohibiciones</div>
+      <div class="normas-block-body">
+        <div class="normas-item"><span class="normas-num">1</span><span>Está prohibido fumar o vapear en el interior del alojamiento.</span></div>
+        <div class="normas-item"><span class="normas-num">2</span><span>No se permite introducir bicicletas, patinetes eléctricos, monopatines u otros vehículos similares en el apartamento ni en las zonas comunes.</span></div>
+        <div class="normas-item"><span class="normas-num">3</span><span>Queda prohibida la realización de actividades ilegales.</span></div>
+        <div class="normas-item"><span class="normas-num">4</span><span>No se permite el uso de velas, barbacoas o cualquier elemento que pueda provocar incendios.</span></div>
+        <div class="normas-item"><span class="normas-num">5</span><span>No está permitido alojar personas no registradas.</span></div>
+        <div class="normas-item"><span class="normas-num">6</span><span>Queda estrictamente prohibido sustraer, retirar o apropiarse de cualquier objeto, mobiliario, textil o equipamiento del alojamiento. Cualquier hurto será considerado una infracción grave y dará lugar a la reclamación inmediata del valor del objeto sustraído, posibles cargos adicionales y, en su caso, acciones legales.</span></div>
+      </div>
+    </div>
+
+    <div class="normas-block">
+      <div class="normas-block-header">🐾 Mascotas</div>
+      <div class="normas-block-body">
+        <div class="normas-item"><span class="normas-num">1</span><span>Solo se admitirán mascotas cuando hayan sido previamente autorizadas por el alojamiento.</span></div>
+        <div class="normas-item"><span class="normas-num">2</span><span>El propietario será responsable de cualquier daño o molestia ocasionada por las mismas.</span></div>
+      </div>
+    </div>
+
+    <div class="normas-block">
+      <div class="normas-block-header">⚠️ Incumplimiento y penalizaciones</div>
+      <div class="normas-block-body">
+        <div class="normas-text-block">El incumplimiento de estas normas podrá dar lugar a la finalización inmediata de la estancia, sin derecho a reembolso, así como a la reclamación de los daños y perjuicios ocasionados.</div>
+        <div class="normas-text-block">Asimismo, se aplicarán de forma inmediata las siguientes penalizaciones económicas según la infracción cometida:</div>
+        <div class="normas-item"><span class="normas-num">•</span><span>Hasta 150 € de penalización por fumar o vapear en el alojamiento.</span></div>
+        <div class="normas-item"><span class="normas-num">•</span><span>Hasta 300 € por causar molestias a los vecinos, derivar en avisos a la policía o provocar sanciones por parte del ayuntamiento.</span></div>
+      </div>
+    </div>
+
+    <div class="normas-block" style="background:#3A5068;">
+      <div class="normas-block-body" style="text-align:center; padding:20px 18px;">
+        <div style="font-size:20px; margin-bottom:6px;">💙</div>
+        <div style="font-size:13.5px; color:#ffffff; line-height:1.6; font-weight:600;">¡Le deseamos una excelente estancia en Apartamentos Go!</div>
+        <div style="font-size:12px; color:#cdd8e2; line-height:1.6; margin-top:4px;">Gracias por ayudarnos a mantener una convivencia armónica.</div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Pie legal -->
+  <div class="legal-footer">
+    <div class="legal-links">
+      <a href="https://apartamentosgo.com/politica-de-privacidad/" target="_blank">Política de privacidad</a>
+      <span class="legal-links-sep">·</span>
+      <a href="https://apartamentosgo.com/aviso-legal/" target="_blank">Aviso legal</a>
+    </div>
+    <div class="legal-brand">Diseñado por StandQR</div>
+  </div>
+
+</body>
+</html>
