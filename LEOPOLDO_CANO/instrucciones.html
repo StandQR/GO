@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Instrucciones</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background: #f0f4f7;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header {
+    background: #3A5068;
+    color: white;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+  .header-back {
+    background: rgba(255,255,255,0.15);
+    border: none;
+    color: white;
+    font-size: 22px;
+    width: 36px; height: 36px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex; align-items: center; justify-content: center;
+    text-decoration: none;
+    flex-shrink: 0;
+  }
+  .header-title { font-size: 16px; font-weight: 700; }
+  .header-sub { font-size: 12px; opacity: 0.75; margin-top: 2px; }
+
+  .page {
+    padding: 16px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 14px;
+  }
+  .block { background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.05); }
+  .block-header {
+    background: #3A5068; color: white;
+    padding: 12px 16px;
+    font-size: 13px; font-weight: 700;
+    display: flex; align-items: center; gap: 8px;
+  }
+  .block-body { padding: 20px 16px; text-align: center; }
+  .icon {
+    width: 64px; height: 64px;
+    margin: 0 auto 12px;
+    border-radius: 18px;
+    background: #dff0f5;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 32px;
+  }
+  .text { font-size: 14px; color: #444; line-height: 1.6; }
+  .text strong { color: #3A5068; }
+
+  .wa-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 14px;
+    background: #25D366;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 12px 14px;
+    border-radius: 10px;
+    transition: background 0.2s;
+  }
+  .wa-btn:active { background: #1db355; }
+
+  .legal-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    padding: 12px 16px 16px;
+    background: #f0f4f7;
+  }
+  .legal-links { display: flex; gap: 6px; align-items: center; }
+  .legal-links a { font-size: 10.5px; color: #7a9ab0; text-decoration: none; }
+  .legal-brand { font-size: 9px; color: #b0c4d0; letter-spacing: 0.04em; }
+</style>
+</head>
+<body>
+
+  <div class="header">
+    <a class="header-back" onclick="history.back()">‹</a>
+    <div>
+      <div class="header-title">Instrucciones</div>
+      <div class="header-sub">Apartamento turístico</div>
+    </div>
+  </div>
+
+  <div class="page">
+    <div class="block">
+      <div class="block-header">🔑 Acceso</div>
+      <div class="block-body">
+        <div class="icon">🔑</div>
+        <div class="text">Para acceder a la vivienda, siga las instrucciones indicadas en el <strong>mensaje de bienvenida</strong>.</div>
+      </div>
+    </div>
+
+    <div class="block">
+      <div class="block-header">📞 ¿Dudas?</div>
+      <div class="block-body">
+        <div class="icon">📞</div>
+        <div class="text">Si tiene cualquier duda, contacte con <strong>recepción</strong>.</div>
+        <a class="wa-btn" href="https://wa.me/34613611978" target="_blank">💬 WhatsApp: +34 613 61 19 78</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="legal-footer">
+    <div class="legal-links">
+      <a href="https://apartamentosgo.com/politica-de-privacidad/" target="_blank">Política de privacidad</a>
+      <span style="font-size:9px; color:#b0c4d0;">·</span>
+      <a href="https://apartamentosgo.com/aviso-legal/" target="_blank">Aviso legal</a>
+    </div>
+    <div class="legal-brand">Diseñado por StandQR</div>
+  </div>
+
+</body>
+</html>
