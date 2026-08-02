@@ -1,1 +1,148 @@
 
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Bienvenida — Único Sentido</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background: #f0f4f7;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header {
+    background: #3A5068;
+    color: white;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+  .header-back {
+    background: rgba(255,255,255,0.15);
+    border: none;
+    color: white;
+    font-size: 22px;
+    width: 36px; height: 36px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex; align-items: center; justify-content: center;
+    text-decoration: none;
+    flex-shrink: 0;
+  }
+  .header-title { font-size: 16px; font-weight: 700; }
+  .header-sub { font-size: 12px; opacity: 0.75; margin-top: 2px; }
+
+  .page { padding-bottom: 16px; }
+  .address-tag {
+    display: inline-flex; align-items: center; gap: 6px;
+    background: #EEF0FA; color: #3A5068;
+    border-radius: 20px; padding: 5px 12px;
+    font-size: 12px; font-weight: 600;
+    margin: 14px 16px 0;
+  }
+  .block { margin: 14px 16px 0; background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.05); }
+  .block-header {
+    background: #3A5068; color: white;
+    padding: 12px 16px;
+    font-size: 13px; font-weight: 700;
+    display: flex; align-items: center; gap: 8px;
+  }
+  .block-body { padding: 14px 16px; }
+  .item { font-size: 13px; color: #444; line-height: 1.55; padding: 4px 0; }
+  .highlight {
+    background: #EEF0FA; border-left: 3px solid #3A5068;
+    border-radius: 0 8px 8px 0;
+    padding: 10px 14px; margin: 8px 0;
+    font-size: 12.5px; color: #3A5068; line-height: 1.55;
+  }
+
+  .map-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    margin-top: 12px;
+    background: #3A5068;
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 700;
+    padding: 11px 14px;
+    border-radius: 10px;
+    transition: background 0.2s;
+  }
+  .map-btn:active { background: #2c3d4f; }
+
+  .legal-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    padding: 12px 16px 16px;
+    background: #f0f4f7;
+    margin-top: auto;
+  }
+  .legal-links { display: flex; gap: 6px; align-items: center; }
+  .legal-links a { font-size: 10.5px; color: #7a9ab0; text-decoration: none; }
+  .legal-brand { font-size: 9px; color: #b0c4d0; letter-spacing: 0.04em; }
+</style>
+</head>
+<body>
+
+  <div class="header">
+    <a class="header-back" onclick="history.back()">‹</a>
+    <div>
+      <div class="header-title">Bienvenida</div>
+      <div class="header-sub">Apartamentos Go · Único Sentido</div>
+    </div>
+  </div>
+
+  <div class="page">
+
+    <div class="address-tag">📍 Av. Burgos - Portugal, Portal 4</div>
+
+    <div class="block">
+      <div class="block-header">🔑 Acceso a la vivienda</div>
+      <div class="block-body">
+        <div class="item">El acceso a la vivienda se realiza de forma <strong>autónoma</strong>.</div>
+        <div class="item">En la <strong>Avenida Burgos - Portugal, Portal Nº 4</strong>, pulse en el timbre del <strong>2F</strong> durante <strong>3 segundos</strong> y la puerta del portal se abrirá automáticamente.</div>
+        <div class="item">Suba las escaleras y acceda al <strong>2F</strong>, en la segunda planta con el código de acceso que se le ha proporcionado.</div>
+      </div>
+    </div>
+
+    <div class="block">
+      <div class="block-header">🚗 Aparcamiento</div>
+      <div class="block-body">
+        <div class="item">Hay un <strong>parking gratuito cubierto</strong> en la estación de autobuses, y si no, por los alrededores no suele haber problema.</div>
+        <div class="highlight">🅿️ Número de plaza donde debe aparcar: <strong>49</strong></div>
+      </div>
+    </div>
+
+    <div class="block">
+      <div class="block-body">
+        <a class="map-btn" href="https://maps.app.goo.gl/xrhnqgy3zEqX8GcA6" target="_blank">📍 Pulsa para ver ubicación</a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="legal-footer">
+    <div class="legal-links">
+      <a href="https://apartamentosgo.com/politica-de-privacidad/" target="_blank">Política de privacidad</a>
+      <span style="font-size:9px; color:#b0c4d0;">·</span>
+      <a href="https://apartamentosgo.com/aviso-legal/" target="_blank">Aviso legal</a>
+    </div>
+    <div class="legal-brand">Diseñado por StandQR</div>
+  </div>
+
+</body>
+</html>
